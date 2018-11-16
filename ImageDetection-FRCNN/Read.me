@@ -1,0 +1,10 @@
+Image Detection using FRCNN. Dataset used - Red Blood cell.
+Steps:
+1. Go to folder 'BCCD_Dataset-master\BCCD'. Run Command python CreateCSV.py
+2. Go to folder 'BCCD_Dataset-master\BCCD'.  Run Command python CreateTxt.py
+3. Copy file annotation.txt to folder 'keras-frcnn-master'
+4. Run command python train_frcnn.py -o simple -p annotate.txt
+5. Run command python test_frcnn.py -p test_images
+
+You can download precomiled weights from here: https://drive.google.com/file/d/1OmCKlUEYmTjg_jaaN-IQm81eHROU-Gyl/view?usp=sharing
+Article used: https://www.analyticsvidhya.com/blog/2018/11/implementation-faster-r-cnn-python-object-detection/
